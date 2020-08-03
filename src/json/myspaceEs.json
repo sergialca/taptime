@@ -1,0 +1,10 @@
+{
+    "title": "Mis reservas",
+    "btnTxt": "Eliminar",
+    "accept": "Aceptar",
+    "cancel": "Cancelar",
+    "deleteSure": "Eliminar la reserva de la",
+    "deleteThe": "el",
+    "deleteAt": "de",
+    "empty": "No hay reservas"
+}

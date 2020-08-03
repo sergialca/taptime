@@ -1,0 +1,10 @@
+.transparentNav {
+    position: absolute;
+    height: 30px;
+    padding: 5px;
+    width: 90%;
+    background-color: transparent;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}

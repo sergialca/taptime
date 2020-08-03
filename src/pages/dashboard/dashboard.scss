@@ -1,0 +1,107 @@
+@import "../../styles/font";
+.dashboard {
+    .filters {
+        padding: 10px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+
+        .labelInput {
+            display: flex;
+            flex-direction: column;
+
+            .SingleDatePicker {
+                width: 100%;
+                display: block;
+                margin-right: 40px;
+                .SingleDatePickerInput {
+                    background-color: transparent;
+                }
+                .SingleDatePickerInput__withBorder {
+                    text-align: center;
+                    border: 0px;
+
+                    .DateInput {
+                        background: transparent;
+                        .DateInput_input {
+                            -webkit-appearance: none;
+                            border-radius: 250px;
+                            width: 120px;
+                            line-height: normal;
+                            border: 1px solid #cccccc;
+                            margin-right: 20px;
+                            font-size: 16px;
+                            padding: 9px 11px;
+                        }
+                        .DateInput_input:focus {
+                            -webkit-appearance: none;
+                            border: 1px solid #fff;
+                            -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 147, 252, 1);
+                            box-shadow: 0px 0px 0px 2px rgba(0, 147, 252, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rooms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .isSunday {
+        font-size: 20px;
+        color: #414141;
+    }
+
+    @media (min-width: 768px) {
+        .filters {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .labelInput {
+                display: flex;
+                flex-direction: row;
+                .SingleDatePicker {
+                    display: inline-block;
+                    margin-right: 0px;
+
+                    .SingleDatePickerInput {
+                        background-color: transparent;
+                    }
+                    .SingleDatePickerInput__withBorder {
+                        text-align: center;
+                        border: 0px;
+
+                        .DateInput {
+                            background: transparent;
+                            .DateInput_input {
+                                border-radius: 250px;
+                                width: 120px;
+                                line-height: normal;
+                            }
+                            .DateInput_input:focus {
+                                -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 147, 252, 1);
+                                box-shadow: 0px 0px 0px 2px rgba(0, 147, 252, 1);
+                                border: 1px solid #fff;
+                            }
+                        }
+                    }
+                }
+                & .label {
+                    margin-right: 20px;
+                    padding: 10px;
+                }
+                &.second {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+}

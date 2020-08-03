@@ -1,0 +1,16 @@
+{
+    "title": "Reservas",
+    "complete": "No hay horas disponibles",
+    "day": "Día",
+    "room": "Sala",
+    "all": "Todas",
+    "close": "Cerramos los domingos",
+    "timeAlertSure": "Estàs seguro que quieres reservar la",
+    "timeAlertDay": "el día",
+    "timeAlertOf": "de",
+    "timeAlertOk": "Aceptar",
+    "timeAlertBad": "Cancelar",
+    "successAlertOkTxt": "Reserva efectuada con éxito",
+    "successAlertFailTxt": "No se ha podido efectuar la reserva",
+    "successAlertBtn": "Aceptar"
+}

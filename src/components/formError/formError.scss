@@ -1,0 +1,12 @@
+@import "../../styles/font";
+
+.loginError {
+    width: 220px;
+    margin: 0 auto;
+    color: $error-color;
+    font-size: 12px;
+}
+.loginError:after {
+    color: #fff;
+    content: "-";
+}

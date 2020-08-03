@@ -1,0 +1,172 @@
+@import "../../styles/font.scss";
+
+$navbar-background-color: #f2f3f3;
+
+.navbar {
+    background-color: $navbar-background-color;
+    overflow: hidden;
+    overflow-y: auto;
+    display: block;
+
+    .link.brand {
+        float: left;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+        &.active {
+            color: $primary-color;
+        }
+    }
+
+    .icon {
+        float: right;
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        border: 1px solid;
+        border-radius: 250px;
+        padding: 6px 6px 0 6px;
+        margin: 8px 10px 0 0;
+    }
+    .profile {
+        float: right;
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        background-color: #ccc;
+        border-radius: 250px;
+        padding: 6px 6px 0 6px;
+        margin: 8px 0 0 46%;
+        position: absolute;
+        color: #000;
+
+        a {
+            color: #000;
+        }
+
+        &.selected {
+            background-color: $primary-color;
+        }
+    }
+    .profile:hover {
+        background-color: $hover-color;
+    }
+
+    &.expand {
+        position: relative;
+        width: 100%;
+        .icon {
+            position: absolute;
+            float: right;
+            right: 0;
+            top: 0;
+        }
+        .link.brand {
+            float: none;
+            display: inline-block;
+            text-align: left;
+        }
+        .profile {
+            top: 0;
+        }
+    }
+    .panel {
+        display: none;
+        width: 100%;
+        .link {
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+
+            &.selected {
+                color: $primary-color;
+            }
+        }
+        .link:hover {
+            color: $hover-color;
+        }
+
+        .lang {
+            padding: 10px 16px 0px 16px;
+            display: flex;
+            justify-content: center;
+        }
+        &.expand {
+            flex-basis: 100%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            background-color: $navbar-background-color;
+            z-index: 1;
+            height: 90%;
+
+            .lang {
+                padding: 10px 16px 10px 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: flex-start;
+        .icon {
+            display: none;
+        }
+        .profile {
+            margin: 8px 10px 0 10px;
+            position: relative;
+            float: none;
+        }
+        .link.brand {
+            display: inline-block;
+        }
+        &.expand {
+            position: relative;
+        }
+        .profile {
+            margin: 8px 10px 0 10px;
+            position: relative;
+            float: none;
+        }
+        .panel {
+            display: flex;
+            width: auto;
+
+            .link {
+                color: #333;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: inline-block;
+            }
+            .lang {
+                display: inline-block;
+            }
+            &.expand {
+                display: inline-block;
+                width: auto;
+                height: auto;
+                position: relative;
+                flex-basis: 25%;
+                flex-grow: 0.04;
+                .link {
+                    display: inline-block;
+                }
+                .lang {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

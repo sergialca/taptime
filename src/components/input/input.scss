@@ -1,0 +1,26 @@
+@import "../../styles/font.scss";
+
+.inputWrapper {
+    background-color: #ccc;
+    width: 230px;
+    padding: 10px 20px;
+    border-radius: 250px;
+    .input {
+        height: 20px;
+        padding: 0;
+        width: 80%;
+        margin-left: 10px;
+        vertical-align: top;
+        background-color: #ccc;
+        font-size: $mobile-font;
+    }
+    .center {
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+        .input {
+            font-size: $desktop-font;
+        }
+    }
+}

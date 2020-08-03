@@ -1,0 +1,20 @@
+.mySpace {
+    display: block;
+
+    .empty {
+        padding-top: 20px;
+        font-size: 20px;
+        color: #414141;
+        display: flex;
+        justify-content: center;
+        span {
+            font-size: 20px;
+            color: #414141;
+        }
+    }
+}
+.mySpaceLoading {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}

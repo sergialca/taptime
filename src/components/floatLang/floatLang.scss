@@ -1,0 +1,41 @@
+@import "../../styles/font.scss";
+
+.selectWrap {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: 250px;
+    font-size: 12px;
+    color: $primary-color;
+}
+.select {
+    @include resetSelect();
+    flex: 1;
+    padding: 0 10px;
+    cursor: pointer;
+    background: #2c3e50;
+    color: #fff;
+}
+
+/* Arrow */
+.selectWrap::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 8px;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+}
+/* Transition */
+.selectWrap:hover::after {
+    color: $hover-color;
+}

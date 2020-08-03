@@ -1,0 +1,23 @@
+{
+    "mailPlaceholder": "Mail",
+    "mailError": "Mail no válido",
+    "mailRequired": "Mail requerido",
+    "nameError": "Nombre no válido",
+    "namePlaceholder": "Nombre completo",
+    "nameRequired": "Nombre requerido",
+    "pswPlaceholder": "Contraseña",
+    "pswError": "La contraseña debe contener mínimo 8 carácteres, una mayúscula, una minúscula y un número",
+    "pswRequired": "Contraseña requerida",
+    "rePswPlaceholder": "Repetir contraseña",
+    "rePswError": "Las contraseñas no coinciden",
+    "rePswRequired": "Campo requierido",
+    "pswRule": "La contraseña debe contener mínimo 8 carácteres, una mayúscula, una minúscula y un número.",
+    "accept": "Aceptar",
+    "loginTitle": "Log in",
+    "signupTitle": "Regístrate",
+    "signup": "Crear cuenta",
+    "submitBtn": "Registrarse",
+    "submitError": "Error al registrarse",
+    "submitOk": "Enviando mail de confirmación",
+    "back": "Volver"
+}

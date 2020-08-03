@@ -1,0 +1,211 @@
+$primary-color: #0093fc;
+$hover-color: #00d6fc;
+$active-color: #00fcfc;
+$error-color: #cc0000;
+$secondary-color: #ccc;
+$secondary-hover: #d6d6d6;
+$success-back: #d4edda;
+$fail-back: #f8d7da;
+$info-color: #6100cc;
+$mobile-font: 16px;
+$desktop-font: 13.3333px;
+
+@mixin title() {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+
+@mixin inputReset() {
+    input {
+        outline: none;
+        border: none;
+    }
+    textarea {
+        outline: none;
+        border: none;
+    }
+    textarea:focus,
+    input:focus {
+        border-color: transparent !important;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    input:focus:-moz-placeholder {
+        color: transparent;
+    }
+    input:focus::-moz-placeholder {
+        color: transparent;
+    }
+    input:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+    textarea:focus:-moz-placeholder {
+        color: transparent;
+    }
+    textarea:focus::-moz-placeholder {
+        color: transparent;
+    }
+    textarea:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #777777;
+    }
+    input:-moz-placeholder {
+        color: #777777;
+    }
+    input::-moz-placeholder {
+        color: #777777;
+    }
+    input:-ms-input-placeholder {
+        color: #777777;
+    }
+
+    textarea::-webkit-input-placeholder {
+        color: #777777;
+    }
+    textarea:-moz-placeholder {
+        color: #777777;
+    }
+    textarea::-moz-placeholder {
+        color: #777777;
+    }
+    textarea:-ms-input-placeholder {
+        color: #777777;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        box-shadow: 0 0 0px 1000px #ccc inset;
+        -webkit-box-shadow: 0 0 0px 1000px #ccc inset;
+        background-color: #ccc !important;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*ANIMATIONS*/
+@mixin fade($duration, $delay) {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    animation-duration: $duration;
+    animation-delay: $delay;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 20%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/*BUTTONS*/
+@mixin primaryBtn($width) {
+    width: $width;
+    padding: 10px 20px;
+    border-radius: 250px;
+    margin: 0 auto;
+    border-width: 0px;
+    border-style: none;
+    background-color: $primary-color;
+    cursor: pointer;
+}
+@mixin primaryBtnHover() {
+    background-color: $hover-color;
+}
+@mixin primaryBtnFocus() {
+    outline: none;
+    background-color: $primary-color;
+}
+@mixin primaryBtnActive() {
+    background-color: $active-color;
+}
+
+/*BTN CANCEL*/
+
+@mixin cancelBtn($width) {
+    width: $width;
+    padding: 10px;
+    border-radius: 250px;
+    text-align: center;
+    margin: 0 auto;
+    border-width: 0px;
+    border-style: none;
+    background-color: $secondary-color;
+    cursor: pointer;
+}
+@mixin cancelBtnHover() {
+    background-color: $secondary-hover;
+}
+@mixin cancelBtnFocus() {
+    outline: none;
+    background-color: $secondary-color;
+}
+@mixin cancelBtnActive() {
+    background-color: $secondary-color;
+}
+
+/*BTN DELETE*/
+@mixin btn($width, $color) {
+    width: $width;
+    padding: 10px 20px;
+    border-radius: 250px;
+    margin: 0 auto;
+    border-width: 0px;
+    border-style: none;
+    background-color: $color;
+    cursor: pointer;
+}
+@mixin btnHover($color) {
+    background-color: $color;
+}
+@mixin btnFocus($color) {
+    outline: none;
+    background-color: $color;
+}
+@mixin btnActive($color) {
+    background-color: $color;
+}
+
+@mixin resetSelect() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    select::-ms-expand {
+        display: none;
+    }
+}
+/* Remove IE arrow */

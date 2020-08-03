@@ -1,0 +1,70 @@
+@import "../../styles/font";
+$info-width: 30px;
+.signinTxt {
+    text-align: center;
+    margin-top: 40px;
+    @include title();
+}
+.signinForm {
+    padding: 0px;
+    @include inputReset();
+
+    .inputInfoContainer {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inputInfoWrapper {
+            background-color: #ccc;
+            width: 230px;
+            padding: 10px 20px;
+            border-radius: 250px;
+            margin-left: $info-width;
+            .inputInfo {
+                height: 20px;
+                padding: 0;
+                width: 80%;
+                vertical-align: top;
+                margin-left: 10px;
+                background-color: #ccc;
+                font-size: $mobile-font;
+            }
+        }
+        .info {
+            width: $info-width;
+            height: $info-width;
+            color: $info-color;
+            cursor: pointer;
+        }
+
+        .info:active {
+            color: $active-color;
+        }
+    }
+    .center {
+        margin: 0 auto;
+    }
+    .space {
+        margin-top: 10px;
+    }
+    .signinBtnWrapper {
+        text-align: center;
+    }
+    .recover {
+        text-align: center;
+        font-size: 12px;
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+        a:hover {
+            color: $hover-color;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .inputInfoContainer .inputInfoWrapper .inputInfo {
+            font-size: $desktop-font;
+        }
+    }
+}

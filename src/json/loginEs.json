@@ -1,0 +1,16 @@
+{
+    "pswRule": "La contraseña debe contener mínimo 8 carácteres, una mayúscula, una minúscula y un número.",
+    "pswRequired": "Contraseña requerida",
+    "pswPlaceholder": "Contraseña",
+    "accept": "Aceptar",
+    "loginTitle": "Entrar",
+    "signup": "Crear cuenta",
+    "submitBtn": "Entrar",
+    "submitError": "Error al entrar",
+    "submitErrorVerify": "Mail no verificado",
+    "recoveryTxt": "Recuperar",
+    "recoveryA": "usuario y contraseña",
+    "mailPlaceholder": "Mail",
+    "mailError": "Mail no válido",
+    "mailRequired": "Mail requerido"
+}

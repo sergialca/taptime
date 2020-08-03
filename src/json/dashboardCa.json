@@ -1,0 +1,16 @@
+{
+    "title": "Reserves",
+    "complete": "No hi ha hores disponibles",
+    "day": "Dia",
+    "room": "Sala",
+    "all": "Totes",
+    "close": "Diumenges tancat",
+    "timeAlertSure": "Estàs segur que vols reservar la",
+    "timeAlertDay": "el dia",
+    "timeAlertOf": "de",
+    "timeAlertOk": "Acceptar",
+    "timeAlertBad": "Cancel·lar",
+    "successAlertOkTxt": "Reserva efectuada amb èxit",
+    "successAlertFailTxt": "No s'ha pogut efectuar la reserva",
+    "successAlertBtn": "Acceptar"
+}

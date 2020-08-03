@@ -1,0 +1,26 @@
+@import "../../styles/font";
+
+.submitBtnAlert {
+    @include primaryBtn(100px);
+    margin-right: 10px;
+    font-size: $mobile-font;
+    .spin {
+        padding-left: 5px;
+        position: absolute;
+    }
+}
+.submitBtnAlert:hover {
+    @include primaryBtnHover();
+}
+.submitBtnAlert:focus {
+    @include primaryBtnFocus();
+}
+.submitBtnAlert:active {
+    @include primaryBtnActive();
+}
+
+@media (min-width: 768px) {
+    .submitBtnAlert {
+        font-size: $desktop-font;
+    }
+}

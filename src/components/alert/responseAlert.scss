@@ -1,0 +1,129 @@
+@import "../../styles/font";
+.responseAlert {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    .alertBack {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #fff;
+        opacity: 0.8;
+        z-index: 2;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 4;
+        top: 100px;
+
+        .info {
+            border-radius: 10px;
+            width: 90%;
+            min-width: 80%;
+            height: 30%;
+            box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.75);
+            padding: 10px;
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            @include fade(0.8s, 0s);
+
+            &.success {
+                background-color: $success-back;
+            }
+            &.fail {
+                background-color: $fail-back;
+            }
+
+            .inline {
+                display: flex;
+            }
+
+            .icon {
+                color: $info-color;
+                font-size: 30px;
+                width: 30px;
+                height: 30px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .txtWrap {
+                font-size: $mobile-font;
+            }
+
+            .btnWrap {
+                width: 100%;
+                text-align: center;
+
+                .btn {
+                    @include primaryBtn(100px);
+                    font-size: $mobile-font;
+                    &.aceptar {
+                        margin-right: 10px;
+                    }
+                }
+                .btn:hover {
+                    @include primaryBtnHover();
+                }
+                .btn:focus {
+                    @include primaryBtnFocus();
+                }
+                .btn:active {
+                    @include primaryBtnActive();
+                }
+
+                .btnCancel {
+                    @include cancelBtn(100px);
+                    font-size: $mobile-font;
+                }
+                .btnCancel:hover {
+                    @include cancelBtnHover();
+                }
+                .btnCancel:focus {
+                    @include cancelBtnFocus();
+                }
+                .btnCancel:active {
+                    @include cancelBtnActive();
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            .info {
+                width: 40%;
+                min-width: 40%;
+                height: 30%;
+                min-height: 30%;
+
+                &.success {
+                    background-color: $success-back;
+                }
+                &.fail {
+                    background-color: $fail-back;
+                }
+
+                .btnWrap {
+                    .btn {
+                        font-size: $desktop-font;
+                    }
+                    .btnCancel {
+                        font-size: $desktop-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.noResponseAlert {
+    display: none;
+}

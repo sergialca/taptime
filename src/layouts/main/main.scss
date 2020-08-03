@@ -1,0 +1,14 @@
+@import "../../styles/font.scss";
+.layout {
+    .header {
+        padding: 8px 8px 8px 24px;
+        @include title();
+        background: linear-gradient(90deg, #00d6fc 0%, #0093fc 100%);
+    }
+
+    @media (min-width: 768px) {
+        .header {
+            padding: 12px 12px 12px 24px;
+        }
+    }
+}
